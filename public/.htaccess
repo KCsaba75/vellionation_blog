@@ -2,7 +2,28 @@ Options -MultiViews
 RewriteEngine On
 RewriteBase /
 RewriteRule ^index\.html$ - [L]
+
+# Serve the prerendered static `<path>.html` when it exists (mirrors scripts/preview.js
+# try-files). This is what delivers per-page <title>, meta description, canonical and
+# JSON-LD to crawlers/AI bots instead of the generic SPA shell.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+?)/?$ /$1.html [L]
+
+# SPA fallback for everything else.
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-l
 RewriteRule . /index.html [L]
+
+# Cache policy. The HTML shell + prerendered pages must NEVER be cached long: they
+# reference content-hashed asset filenames, so a stale cached HTML points at deleted
+# bundles and breaks the page. Always revalidate HTML; cache hashed assets forever.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|xml|txt|json)$">
+    Header set Cache-Control "no-cache, must-revalidate, max-age=0"
+  </FilesMatch>
+  <FilesMatch "\.(js|css|woff2?|png|jpg|jpeg|gif|svg|ico|webp)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>

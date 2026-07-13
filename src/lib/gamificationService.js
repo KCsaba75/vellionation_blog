@@ -48,7 +48,7 @@ export const getUserStats = async (userId) => {
       supabase.from('posts').select('*', { count: 'exact', head: true }).eq('user_id', userId).eq('status', 'published'),
       supabase.from('community_comments').select('*', { count: 'exact', head: true }).eq('user_id', userId),
       supabase.from('community_posts').select('*', { count: 'exact', head: true }).eq('user_id', userId),
-      supabase.from('profiles').select('*').eq('id', userId).single()
+      supabase.from('profiles').select('id, name, avatar_url, bio, role, points, rank, current_streak, max_streak, last_login_date, is_founding_member, email_notifications, newsletter_subscribed, created_at, updated_at').eq('id', userId).single()
     ]);
 
     const profile = profileResult.data;

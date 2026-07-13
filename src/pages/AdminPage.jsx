@@ -73,7 +73,7 @@ const AdminPage = () => {
     setPosts(postsData || []);
     const { data: solutionsData } = await supabase.from('solutions').select('*, categories!solutions_category_id_fkey(name), subcategories:categories!solutions_subcategory_id_fkey(name)').order('created_at', { ascending: false });
     setSolutions(solutionsData || []);
-    const { data: usersData } = await supabase.from('profiles').select('*').order('created_at', { ascending: false });
+    const { data: usersData } = await supabase.rpc('admin_list_profiles');
     setUsers(usersData || []);
     
     const { data: settingsData } = await supabase.from('settings').select('key, value');

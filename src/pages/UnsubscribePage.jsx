@@ -18,13 +18,13 @@ const UnsubscribePage = () => {
     }
 
     const doUnsubscribe = async () => {
-      const { error, count } = await supabase
-        .from('newsletter_subscribers')
-        .delete({ count: 'exact' })
-        .eq('unsubscribe_token', token);
+      const { data, error } = await supabase
+        .rpc('unsubscribe_by_token', { p_token: token });
 
       if (error) {
         setStatus('error');
+      } else if (!data) {
+        setStatus('invalid');
       } else {
         setStatus('success');
       }

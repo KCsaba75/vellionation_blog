@@ -16,7 +16,7 @@ const staticPages = [
   { url: '/blog', title: 'Blog - Vellio Nation', description: 'Explore wellness articles, health tips, and lifestyle advice from our community of experts.' },
   { url: '/community', title: 'Community - Vellio Nation', description: 'Connect with like-minded individuals on their wellness journey. Share experiences and support each other.' },
   { url: '/solutions', title: 'Solutions - Vellio Nation', description: 'Discover wellness products, apps, and educational resources to support your healthy lifestyle.' },
-  { url: '/about', title: 'About Vellio Nation', description: 'Learn about Vellio Nation, our mission to support men and women over 40 with evidence-based weight loss strategies, hormone-friendly nutrition, and a welcoming community.' },
+  { url: '/about', title: 'About Vellio Nation', description: 'Learn about Vellio Nation, our mission to support women over 40 with evidence-based weight loss strategies, hormone-friendly nutrition, and a welcoming community.' },
   { url: '/login', title: 'Login - Vellio Nation', description: 'Login to your Vellio Nation account.' },
   { url: '/register', title: 'Join Vellio Nation', description: 'Create your Vellio Nation account and start your wellness journey today.' },
   { url: '/forgot-password', title: 'Forgot Password - Vellio Nation', description: 'Reset your Vellio Nation password.' },

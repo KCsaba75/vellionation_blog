@@ -3,11 +3,11 @@ import { supabase } from './customSupabaseClient';
 const SITE_URL = 'https://www.vellionation.com';
 
 const staticPages = [
-  { url: '/', changefreq: 'weekly', priority: '1.0', title: 'Weight Loss After 40 | Vellio Nation - Healthy Living for Men & Women', description: 'Discover proven weight loss strategies for men and women over 40. Expert tips on losing weight, healthy eating, metabolism boosting, and sustainable lifestyle changes.' },
-  { url: '/blog', changefreq: 'daily', priority: '0.9', title: 'Weight Loss Blog for 40+ | Diet, Fitness & Healthy Living Tips', description: 'Expert weight loss tips for men and women over 40. Articles on metabolism boosting, healthy eating habits, exercise routines, and lifestyle changes for sustainable results.' },
-  { url: '/community', changefreq: 'daily', priority: '0.8', title: 'Weight Loss Community for 40+ | Support & Motivation', description: 'Join our supportive community of men and women over 40 on their weight loss journey. Share experiences, get motivated, and find accountability partners.' },
-  { url: '/solutions', changefreq: 'weekly', priority: '0.8', title: 'Weight Loss Products & Apps for 40+ | Recommended Solutions', description: 'Discover the best weight loss products, fitness apps, and health tools for men and women over 40. Expert-recommended solutions for metabolism support and healthy living.' },
-  { url: '/about', changefreq: 'monthly', priority: '0.5', title: 'About Vellio Nation | Wellness Community for 40+', description: 'Learn about Vellio Nation, our mission to support men and women over 40 with evidence-based weight loss strategies, hormone-friendly nutrition, and a welcoming community.' },
+  { url: '/', changefreq: 'weekly', priority: '1.0', title: 'Weight Loss for Women Over 40 | Vellio Nation', description: 'Discover proven weight loss strategies for women over 40. Expert tips on losing weight, healthy eating, metabolism boosting, and sustainable lifestyle changes.' },
+  { url: '/blog', changefreq: 'daily', priority: '0.9', title: 'Weight Loss Blog for Women Over 40 | Diet, Fitness & Healthy Living Tips', description: 'Expert weight loss tips for women over 40. Articles on metabolism boosting, healthy eating habits, exercise routines, and lifestyle changes for sustainable results.' },
+  { url: '/community', changefreq: 'daily', priority: '0.8', title: 'Weight Loss Community for Women Over 40 | Support & Motivation', description: 'Join our supportive community of women over 40 on their weight loss journey. Share experiences, get motivated, and find accountability partners.' },
+  { url: '/solutions', changefreq: 'weekly', priority: '0.8', title: 'Weight Loss Products & Apps for Women Over 40 | Recommended Solutions', description: 'Discover the best weight loss products, fitness apps, and health tools for women over 40. Expert-recommended solutions for metabolism support and healthy living.' },
+  { url: '/about', changefreq: 'monthly', priority: '0.5', title: 'About Vellio Nation | Wellness Community for Women Over 40', description: 'Learn about Vellio Nation, our mission to support women over 40 with evidence-based weight loss strategies, hormone-friendly nutrition, and a welcoming community.' },
   { url: '/login', changefreq: 'monthly', priority: '0.3', title: 'Login - Vellio Nation', description: 'Login to your Vellio Nation account.' },
   { url: '/register', changefreq: 'monthly', priority: '0.3', title: 'Join Vellio Nation', description: 'Create your Vellio Nation account and start your wellness journey today.' },
   { url: '/help-center', changefreq: 'monthly', priority: '0.4', title: 'Help Center - Vellio Nation', description: 'Find answers to common questions about weight loss after 40 and get support.' },
@@ -47,7 +47,7 @@ export async function generateLlmsTxt() {
 
   entries.push('# Vellio Nation');
   entries.push('');
-  entries.push('> Vellio Nation is a weight loss and wellness community for men and women over 40. We provide evidence-based strategies for losing weight after 40, boosting metabolism, hormone-friendly nutrition, strength training, and sustainable lifestyle transformation. Our platform includes expert blog articles, an active community forum, and curated wellness solutions.');
+  entries.push('> Vellio Nation is a weight loss and wellness community for women over 40. We provide evidence-based strategies for losing weight after 40, boosting metabolism, hormone-friendly nutrition, strength training, and sustainable lifestyle transformation. Our platform includes expert blog articles, an active community forum, and curated wellness solutions.');
   entries.push('');
   entries.push('## Static Pages');
 

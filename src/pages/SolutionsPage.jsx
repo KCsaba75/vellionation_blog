@@ -146,24 +146,24 @@ const SolutionsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Weight Loss Products & Apps for 40+ | Recommended Solutions</title>
-        <meta name="description" content="Discover the best weight loss products, fitness apps, and health tools for men and women over 40. Expert-recommended solutions for metabolism support, nutrition tracking, and healthy lifestyle habits." />
+        <title>Weight Loss Products & Apps for Women Over 40 | Recommended Solutions</title>
+        <meta name="description" content="Discover the best weight loss products, fitness apps, and health tools for women over 40. Expert-recommended solutions for metabolism support, nutrition tracking, and healthy lifestyle habits." />
         <link rel="canonical" href="https://www.vellionation.com/solutions" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.vellionation.com/solutions" />
-        <meta property="og:title" content="Weight Loss Products & Apps for 40+ | Recommended Solutions" />
-        <meta property="og:description" content="Best weight loss products and health tools for men and women over 40. Expert-recommended solutions for metabolism support and healthy living." />
+        <meta property="og:title" content="Weight Loss Products & Apps for Women Over 40 | Recommended Solutions" />
+        <meta property="og:description" content="Best weight loss products and health tools for women over 40. Expert-recommended solutions for metabolism support and healthy living." />
         <meta property="og:image" content="https://rtklsdtadtqpgoibulux.supabase.co/storage/v1/object/public/site_images/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Weight Loss Products & Apps for 40+ | Recommended Solutions" />
-        <meta name="twitter:description" content="Best weight loss products and health tools for men and women over 40. Expert-recommended solutions for metabolism support and healthy living." />
+        <meta name="twitter:title" content="Weight Loss Products & Apps for Women Over 40 | Recommended Solutions" />
+        <meta name="twitter:description" content="Best weight loss products and health tools for women over 40. Expert-recommended solutions for metabolism support and healthy living." />
       </Helmet>
 
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row gap-8">
           <aside className="w-full md:w-48 lg:w-52 flex-shrink-0">
-            <h2 className="text-lg font-semibold mb-4 px-3">Categories</h2>
-            <nav className="flex flex-col space-y-1">
+            <p className="text-lg font-semibold mb-4 px-3">Categories</p>
+            <nav className="flex flex-col space-y-1" aria-label="Solution categories">
               <Button
                 variant="ghost"
                 onClick={() => handleCategoryClick(null)}
@@ -303,7 +303,7 @@ const SolutionsPage = () => {
                           </span>
                         </div>
                       )}
-                      <h3 className="text-lg font-bold mb-2">{solution.name}</h3>
+                      <h2 className="text-lg font-bold mb-2">{solution.name}</h2>
                       <p className="text-muted-foreground text-sm mb-3 line-clamp-2">{stripHtml(solution.excerpt || solution.description)}</p>
                       <div className="flex items-center gap-1 mb-4">
                         {[...Array(5)].map((_, i) => (

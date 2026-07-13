@@ -50,17 +50,17 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Weight Loss After 40 | Vellio Nation - Healthy Living for Men & Women</title>
+        <title>Weight Loss for Women Over 40 | Vellio Nation</title>
         <meta name="description" content="Proven weight loss strategies for women over 40. Expert tips on losing weight, healthy eating & metabolism boosting. Join Vellio Nation today." />
         <meta name="keywords" content="weight loss, weight loss over 40, metabolism reset, longevity lifestyle, ageless vitality, biohacking, functional medicine, healthy weight loss, sustainable transformation, midlife wellness" />
         <link rel="canonical" href="https://www.vellionation.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.vellionation.com/" />
-        <meta property="og:title" content="Weight Loss After 40 | Vellio Nation - Healthy Living for Men & Women" />
+        <meta property="og:title" content="Weight Loss for Women Over 40 | Vellio Nation" />
         <meta property="og:description" content="Proven weight loss strategies for women over 40. Expert tips on losing weight, healthy eating & metabolism boosting. Join Vellio Nation today." />
         <meta property="og:image" content="https://rtklsdtadtqpgoibulux.supabase.co/storage/v1/object/public/site_images/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Weight Loss After 40 | Vellio Nation - Healthy Living for Men & Women" />
+        <meta name="twitter:title" content="Weight Loss for Women Over 40 | Vellio Nation" />
         <meta name="twitter:description" content="Proven weight loss strategies for women over 40. Expert tips on losing weight, healthy eating & metabolism boosting. Join Vellio Nation today." />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -69,7 +69,7 @@ const HomePage = () => {
             "name": "Vellio Nation",
             "url": "https://www.vellionation.com",
             "logo": "https://rtklsdtadtqpgoibulux.supabase.co/storage/v1/object/public/site_images/logo.png",
-            "description": "A wellness community helping men and women over 40 achieve sustainable weight loss through healthy eating, fitness guidance, and lifestyle transformation.",
+            "description": "A wellness community helping women over 40 achieve sustainable weight loss through healthy eating, fitness guidance, and lifestyle transformation.",
             "sameAs": [
               "https://www.facebook.com/vellionation",
               "https://www.instagram.com/vellionation"

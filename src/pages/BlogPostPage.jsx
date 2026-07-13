@@ -469,7 +469,7 @@ const BlogPostPage = () => {
                   </div>
                   <div className="flex-1 text-center sm:text-left">
                     <p className="text-sm text-muted-foreground mb-1">Written by</p>
-                    <h3 className="text-xl font-bold mb-2">{post.profiles?.name || 'Vellio Team'}</h3>
+                    <h2 className="text-xl font-bold mb-2">{post.profiles?.name || 'Vellio Team'}</h2>
                     {post.profiles?.bio ? (
                       <p className="text-muted-foreground leading-relaxed">{post.profiles.bio}</p>
                     ) : (

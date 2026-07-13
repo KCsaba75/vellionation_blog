@@ -21,7 +21,7 @@ const ORG_JSON_LD = {
   url: SITE_URL,
   logo: LOGO_URL,
   description:
-    'A wellness community helping men and women over 40 achieve sustainable weight loss through healthy eating, fitness guidance, and lifestyle transformation.',
+    'A wellness community helping women over 40 achieve sustainable weight loss through healthy eating, fitness guidance, and lifestyle transformation.',
   sameAs: ['https://www.facebook.com/vellionation', 'https://www.instagram.com/vellionation'],
 };
 
@@ -176,7 +176,7 @@ function staticRoutes() {
     {
       path: '/',
       seo: {
-        title: 'Weight Loss After 40 | Vellio Nation - Healthy Living for Men & Women',
+        title: 'Weight Loss for Women Over 40 | Vellio Nation',
         description:
           'Proven weight loss strategies for women over 40. Expert tips on losing weight, healthy eating & metabolism boosting. Join Vellio Nation today.',
         canonical: `${SITE_URL}/`,
@@ -188,44 +188,44 @@ function staticRoutes() {
     {
       path: '/blog',
       seo: {
-        title: 'Weight Loss Blog for 40+ | Diet, Fitness & Healthy Living Tips',
+        title: 'Weight Loss Blog for Women Over 40 | Diet, Fitness & Healthy Living Tips',
         description:
-          'Expert weight loss tips for men and women over 40. Read articles on metabolism boosting, healthy eating habits, exercise routines, and lifestyle changes for sustainable results after 40.',
+          'Expert weight loss tips for women over 40. Read articles on metabolism boosting, healthy eating habits, exercise routines, and lifestyle changes for sustainable results after 40.',
         canonical: `${SITE_URL}/blog`,
         ogDescription:
-          'Expert weight loss tips for men and women over 40. Articles on metabolism boosting, healthy eating, and sustainable lifestyle changes.',
+          'Expert weight loss tips for women over 40. Articles on metabolism boosting, healthy eating, and sustainable lifestyle changes.',
         twitterDescription:
-          'Expert weight loss tips for men and women over 40. Articles on metabolism boosting, healthy eating, and sustainable lifestyle changes.',
+          'Expert weight loss tips for women over 40. Articles on metabolism boosting, healthy eating, and sustainable lifestyle changes.',
       },
     },
     {
       path: '/community',
       seo: {
-        title: 'Weight Loss Community for 40+ | Support & Motivation',
+        title: 'Weight Loss Community for Women Over 40 | Support & Motivation',
         description:
-          'Join a supportive weight loss community for men and women over 40. Share your journey, find motivation, and connect with others on the path to healthier living.',
+          'Join a supportive weight loss community for women over 40. Share your journey, find motivation, and connect with others on the path to healthier living.',
         canonical: `${SITE_URL}/community`,
       },
     },
     {
       path: '/solutions',
       seo: {
-        title: 'Weight Loss Products & Apps for 40+ | Recommended Solutions',
+        title: 'Weight Loss Products & Apps for Women Over 40 | Recommended Solutions',
         description:
-          'Discover the best weight loss products, fitness apps, and health tools for men and women over 40. Expert-recommended solutions for metabolism support, nutrition tracking, and healthy lifestyle habits.',
+          'Discover the best weight loss products, fitness apps, and health tools for women over 40. Expert-recommended solutions for metabolism support, nutrition tracking, and healthy lifestyle habits.',
         canonical: `${SITE_URL}/solutions`,
         ogDescription:
-          'Best weight loss products and health tools for men and women over 40. Expert-recommended solutions for metabolism support and healthy living.',
+          'Best weight loss products and health tools for women over 40. Expert-recommended solutions for metabolism support and healthy living.',
         twitterDescription:
-          'Best weight loss products and health tools for men and women over 40. Expert-recommended solutions for metabolism support and healthy living.',
+          'Best weight loss products and health tools for women over 40. Expert-recommended solutions for metabolism support and healthy living.',
       },
     },
     {
       path: '/about',
       seo: {
-        title: 'About Vellio Nation | Wellness Community for 40+',
+        title: 'About Vellio Nation | Wellness Community for Women Over 40',
         description:
-          'Learn about Vellio Nation — our mission, story, and the team helping men and women over 40 transform their health, energy, and confidence.',
+          'Learn about Vellio Nation — our mission, story, and the team helping women over 40 transform their health, energy, and confidence.',
         canonical: `${SITE_URL}/about`,
       },
     },

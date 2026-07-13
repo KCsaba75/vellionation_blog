@@ -154,17 +154,17 @@ const BlogPage = () => {
   return (
     <>
       <Helmet>
-        <title>Weight Loss Blog for 40+ | Diet, Fitness & Healthy Living Tips</title>
-        <meta name="description" content="Expert weight loss tips for men and women over 40. Read articles on metabolism boosting, healthy eating habits, exercise routines, and lifestyle changes for sustainable results after 40." />
+        <title>Weight Loss Blog for Women Over 40 | Diet, Fitness & Healthy Living Tips</title>
+        <meta name="description" content="Expert weight loss tips for women over 40. Read articles on metabolism boosting, healthy eating habits, exercise routines, and lifestyle changes for sustainable results after 40." />
         <link rel="canonical" href="https://www.vellionation.com/blog" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.vellionation.com/blog" />
-        <meta property="og:title" content="Weight Loss Blog for 40+ | Diet, Fitness & Healthy Living Tips" />
-        <meta property="og:description" content="Expert weight loss tips for men and women over 40. Articles on metabolism boosting, healthy eating, and sustainable lifestyle changes." />
+        <meta property="og:title" content="Weight Loss Blog for Women Over 40 | Diet, Fitness & Healthy Living Tips" />
+        <meta property="og:description" content="Expert weight loss tips for women over 40. Articles on metabolism boosting, healthy eating, and sustainable lifestyle changes." />
         <meta property="og:image" content="https://rtklsdtadtqpgoibulux.supabase.co/storage/v1/object/public/site_images/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Weight Loss Blog for 40+ | Diet, Fitness & Healthy Living Tips" />
-        <meta name="twitter:description" content="Expert weight loss tips for men and women over 40. Articles on metabolism boosting, healthy eating, and sustainable lifestyle changes." />
+        <meta name="twitter:title" content="Weight Loss Blog for Women Over 40 | Diet, Fitness & Healthy Living Tips" />
+        <meta name="twitter:description" content="Expert weight loss tips for women over 40. Articles on metabolism boosting, healthy eating, and sustainable lifestyle changes." />
       </Helmet>
 
       <section className="py-6 bg-secondary/30">
@@ -187,8 +187,8 @@ const BlogPage = () => {
           <div className="flex flex-col lg:flex-row gap-8">
             <aside className="lg:w-52 flex-shrink-0">
               <div className="bg-card rounded-xl p-4 shadow-lg sticky top-4">
-                <h3 className="font-bold text-lg mb-4">Categories</h3>
-                <nav className="space-y-1">
+                <p className="font-bold text-lg mb-4">Categories</p>
+                <nav className="space-y-1" aria-label="Article categories">
                   <button
                     onClick={clearFilters}
                     className={`w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center justify-between ${

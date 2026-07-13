@@ -183,21 +183,21 @@ const CommunityPage = () => {
   return (
     <>
       <Helmet>
-        <title>Weight Loss Community for 40+ | Support & Motivation</title>
-        <meta name="description" content="Join our supportive community of men and women over 40 on their weight loss journey. Share experiences, get motivated, and find accountability partners for sustainable healthy living." />
+        <title>Weight Loss Community for Women Over 40 | Support & Motivation</title>
+        <meta name="description" content="Join our supportive community of women over 40 on their weight loss journey. Share experiences, get motivated, and find accountability partners for sustainable healthy living." />
         <link rel="canonical" href="https://www.vellionation.com/community" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.vellionation.com/community" />
-        <meta property="og:title" content="Weight Loss Community for 40+ | Support & Motivation" />
-        <meta property="og:description" content="Join our supportive community of men and women over 40 on their weight loss journey. Share experiences and find accountability partners." />
+        <meta property="og:title" content="Weight Loss Community for Women Over 40 | Support & Motivation" />
+        <meta property="og:description" content="Join our supportive community of women over 40 on their weight loss journey. Share experiences and find accountability partners." />
         <meta property="og:image" content="https://rtklsdtadtqpgoibulux.supabase.co/storage/v1/object/public/site_images/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Weight Loss Community for 40+ | Support & Motivation" />
-        <meta name="twitter:description" content="Join our supportive community of men and women over 40 on their weight loss journey. Share experiences and find accountability partners." />
+        <meta name="twitter:title" content="Weight Loss Community for Women Over 40 | Support & Motivation" />
+        <meta name="twitter:description" content="Join our supportive community of women over 40 on their weight loss journey. Share experiences and find accountability partners." />
       </Helmet>
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row gap-8">
-          <aside className="w-full md:w-1/4 lg:w-1/5"><h2 className="text-lg font-semibold mb-4 px-3">Categories</h2><nav className="flex flex-col space-y-1">
+          <aside className="w-full md:w-1/4 lg:w-1/5"><p className="text-lg font-semibold mb-4 px-3">Categories</p><nav className="flex flex-col space-y-1" aria-label="Community categories">
             <Button variant="ghost" onClick={() => setSelectedCategoryId(null)} className={cn('w-full justify-start', selectedCategoryId === null && 'bg-primary/10 text-primary')}>
               All{selectedCategoryId === null && <ChevronRight className="ml-auto h-4 w-4" />}
             </Button>

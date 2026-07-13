@@ -25,6 +25,7 @@ const BlogDashboardPage = lazy(() => import('@/pages/BlogDashboardPage'));
 const StaticPage = lazy(() => import('@/pages/StaticPage'));
 const AboutPage = lazy(() => import('@/pages/AboutPage'));
 const UnsubscribePage = lazy(() => import('@/pages/UnsubscribePage'));
+const AffiliatDisclosurePage = lazy(() => import('@/pages/AffiliatDisclosurePage'));
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
               <Route path="privacy-policy" element={<StaticPage pageKey="page_content_privacy" />} />
               <Route path="terms-of-service" element={<StaticPage pageKey="page_content_terms" />} />
               <Route path="unsubscribe" element={<UnsubscribePage />} />
+              <Route path="affiliate-disclosure" element={<AffiliatDisclosurePage />} />
             </Route>
           </Routes>
           <CookieConsentPopup />

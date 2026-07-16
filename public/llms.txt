@@ -7,7 +7,7 @@
 - [Blog - Vellio Nation](https://www.vellionation.com/blog): Explore wellness articles, health tips, and lifestyle advice from our community of experts.
 - [Community - Vellio Nation](https://www.vellionation.com/community): Connect with like-minded individuals on their wellness journey. Share experiences and support each other.
 - [Solutions - Vellio Nation](https://www.vellionation.com/solutions): Discover wellness products, apps, and educational resources to support your healthy lifestyle.
-- [About Vellio Nation](https://www.vellionation.com/about): Learn about Vellio Nation, our mission to support men and women over 40 with evidence-based weight loss strategies, hormone-friendly nutrition, and a welcoming community.
+- [About Vellio Nation](https://www.vellionation.com/about): Learn about Vellio Nation, our mission to support women over 40 with evidence-based weight loss strategies, hormone-friendly nutrition, and a welcoming community.
 - [Login - Vellio Nation](https://www.vellionation.com/login): Login to your Vellio Nation account.
 - [Join Vellio Nation](https://www.vellionation.com/register): Create your Vellio Nation account and start your wellness journey today.
 - [Forgot Password - Vellio Nation](https://www.vellionation.com/forgot-password): Reset your Vellio Nation password.
@@ -16,6 +16,7 @@
 - [Terms of Service - Vellio Nation](https://www.vellionation.com/terms-of-service): Read our terms and conditions for using Vellio Nation.
 
 ## Blog Posts
+- [Vitamin D & Weight Loss After 40: The Sunshine Solution You're Missing](https://www.vellionation.com/blog/vitamin-d-weight-loss-after-40-the-sunshine-solution-you-re-missing): Over 42% of women are vitamin D deficient — and it silently stalls weight loss after 40. Discover the research-backed connection between vitamin D, me...
 - [The 20-Minute Walking Workout That Transforms Your Body After 40](https://www.vellionation.com/blog/the-20-minute-walking-workout-that-transforms-your-body-after-40): You don't need to run a marathon or lift heavy weights to transform your body after 40. This science-backed 20-minute walking workout is the most unde...
 - [7 Popular Diets Compared: Which One Actually Works for Women Over 40?](https://www.vellionation.com/blog/7-popular-diets-compared-which-one-actually-works-for-women-over-40): Mediterranean, Keto, Intermittent Fasting, Plant-Based, Low-Carb, Zone, or DASH — which diet actually delivers results for women over 40? An honest, p...
 - [My Story: How I Lost 25 Lbs at 50 and Finally Got My Energy Back](https://www.vellionation.com/blog/my-story-how-i-lost-25-lbs-at-50-and-finally-got-my-energy-back): At 49, I was exhausted, heavier than ever, and doing all the 'right' things with zero results. Here's the honest story of what finally worked — and it...
@@ -38,4 +39,4 @@
 - [LeanBiome](https://www.vellionation.com/solutions/c50667d2-013b-4b0c-99e8-e1fac68caec5): Why people choose it?Fires up your metabolismCrushes cravingsStabilizes blood sugarSupports rapid, visible fat lossBoosts energy without jittersYou wa...
 
 ---
-Generated: 2026-04-24
+Generated: 2026-07-13

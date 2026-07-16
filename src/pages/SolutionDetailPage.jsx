@@ -14,6 +14,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import FtcDisclosureBanner from '@/components/FtcDisclosureBanner';
 
 const SolutionDetailPage = () => {
   const { slug } = useParams();
@@ -146,6 +147,8 @@ const SolutionDetailPage = () => {
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Solutions
             </Button>
+
+            <FtcDisclosureBanner />
 
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
               {/* Image */}

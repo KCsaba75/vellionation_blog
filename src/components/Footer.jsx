@@ -47,6 +47,7 @@ const Footer = memo(() => {
               <Link to="/help-center" className="text-sm text-muted-foreground hover:text-primary transition-colors">Help Center</Link>
               <Link to="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link>
               <Link to="/terms-of-service" className="text-sm text-muted-foreground hover:text-primary transition-colors">Terms of Service</Link>
+              <Link to="/affiliate-disclosure" className="text-sm text-muted-foreground hover:text-primary transition-colors">Affiliate Disclosure</Link>
             </nav>
           </div>
 

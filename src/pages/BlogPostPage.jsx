@@ -22,6 +22,7 @@ import {
 import { Facebook, Instagram, MessageSquare } from 'lucide-react';
 import ArticleLimitPopup from '@/components/ArticleLimitPopup';
 import ArticleAudioPlayer from '@/components/ArticleAudioPlayer';
+import FtcDisclosureBanner from '@/components/FtcDisclosureBanner';
 
 const calculateReadingTime = (content) => {
   if (!content) return 1;
@@ -396,6 +397,7 @@ const BlogPostPage = () => {
               )}
             </div>
             <div className="mb-12">
+              <FtcDisclosureBanner />
               <p className="text-xl text-muted-foreground mb-6">{post.excerpt}</p>
               
               {canView ? (

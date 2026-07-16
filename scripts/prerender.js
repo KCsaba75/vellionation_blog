@@ -274,6 +274,15 @@ function staticRoutes() {
         canonical: `${SITE_URL}/register`,
       },
     },
+    {
+      path: '/affiliate-disclosure',
+      seo: {
+        title: 'Affiliate Disclosure - Vellio Nation',
+        description:
+          'Learn how Vellio Nation uses affiliate links and how we earn commissions at no extra cost to you. FTC-required disclosure for our product recommendations.',
+        canonical: `${SITE_URL}/affiliate-disclosure`,
+      },
+    },
   ];
 }
 

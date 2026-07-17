@@ -10,6 +10,17 @@ import DailyTipBanner from '@/components/DailyTipBanner';
 import { useAuth } from '@/contexts/SupabaseAuthContext';
 import { getReadArticleIds } from '@/lib/gamificationService';
 
+const getReadMoreCta = (post) => {
+  const combined = ((post.title || '') + ' ' + (post.categories?.name || '')).toLowerCase();
+  if (combined.includes('hormone')) return 'Discover Your Hormone-Balancing Weight Loss Plan';
+  if (combined.includes('story') || combined.includes('success') || combined.includes('sarah') || combined.includes('real life') || combined.includes('real-life')) return 'See This Real-Life Weight Loss Story';
+  if (combined.includes('belly') || combined.includes('bloat') || combined.includes('midsection') || combined.includes('flat')) return 'Reveal Your Flat Belly Food Secrets';
+  if (combined.includes('perimenopause') || combined.includes('menopause')) return 'Navigate Perimenopause Weight Gain Effectively';
+  if (combined.includes('morning') || combined.includes('minute') || combined.includes('routine') || combined.includes('7-minute')) return 'Start Your Metabolism-Boosting Morning Routine';
+  if (combined.includes('energy') || combined.includes('lazy') || combined.includes('easy') || combined.includes('simple')) return 'Get Your Easy Energy & Fat-Burning Guide';
+  return 'Unlock Your Post-40 Metabolism Secret';
+};
+
 const BlogPage = () => {
   const { user } = useAuth();
   const [posts, setPosts] = useState([]);
@@ -340,7 +351,7 @@ const BlogPage = () => {
                             <span>{post.profiles?.name || 'Vellio Team'}</span>
                           </div>
                           <Button variant="ghost" size="sm" asChild>
-                            <Link to={`/blog/${post.slug}`}>Read More</Link>
+                            <Link to={`/blog/${post.slug}`}>{getReadMoreCta(post)}</Link>
                           </Button>
                         </div>
                       </div>

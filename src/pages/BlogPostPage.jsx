@@ -310,9 +310,19 @@ const BlogPostPage = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BlogPosting",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": `https://www.vellionation.com/blog/${post.slug}`
+            },
             "headline": post.title,
-            "description": post.excerpt,
-            "image": post.image_url || "https://rtklsdtadtqpgoibulux.supabase.co/storage/v1/object/public/site_images/og-image.jpg",
+            "image": {
+              "@type": "ImageObject",
+              "url": post.image_url || "https://rtklsdtadtqpgoibulux.supabase.co/storage/v1/object/public/site_images/og-image.jpg",
+              "width": "1200",
+              "height": "675"
+            },
+            "datePublished": post.created_at,
+            "dateModified": post.updated_at || post.created_at,
             "author": {
               "@type": "Person",
               "name": post.profiles?.name || "Vellio Team"
@@ -322,15 +332,13 @@ const BlogPostPage = () => {
               "name": "Vellio Nation",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://rtklsdtadtqpgoibulux.supabase.co/storage/v1/object/public/site_images/logo.png"
+                "url": "https://rtklsdtadtqpgoibulux.supabase.co/storage/v1/object/public/site_images/logo.png",
+                "width": "600",
+                "height": "60"
               }
             },
-            "datePublished": post.created_at,
-            "dateModified": post.updated_at || post.created_at,
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": `https://www.vellionation.com/blog/${post.slug}`
-            }
+            "description": post.seo_description || post.excerpt,
+            "keywords": (Array.isArray(post.tags) && post.tags.length > 0 ? post.tags.join(', ') + ', ' : '') + "weight loss, women 40+, metabolism, supplements, menopause, health, wellness, diet, fitness"
           })}
         </script>
         <script type="application/ld+json">

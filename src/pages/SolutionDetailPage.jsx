@@ -88,21 +88,43 @@ const SolutionDetailPage = () => {
         <meta name="twitter:image" content={solution.image_url || "https://rtklsdtadtqpgoibulux.supabase.co/storage/v1/object/public/site_images/og-image.jpg"} />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
+            "@context": "https://schema.org/",
             "@type": "Product",
             "name": solution.name,
-            "description": solution.description,
             "image": solution.image_url || "https://rtklsdtadtqpgoibulux.supabase.co/storage/v1/object/public/site_images/og-image.jpg",
+            "description": solution.seo_description || solution.description,
+            "brand": {
+              "@type": "Brand",
+              "name": solution.brand_name || solution.name
+            },
+            "offers": {
+              "@type": "Offer",
+              "url": solution.affiliate_url || `https://www.vellionation.com/solutions/${solution.slug}`,
+              "priceCurrency": "USD",
+              ...(solution.price ? { "price": String(solution.price) } : {}),
+              "itemCondition": "https://schema.org/NewCondition",
+              "availability": "https://schema.org/InStock",
+              "seller": {
+                "@type": "Organization",
+                "name": "Vellio Nation"
+              }
+            },
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": solution.rating || 5,
+              "reviewCount": solution.review_count || 10,
               "bestRating": 5,
               "worstRating": 1
             },
-            "brand": {
-              "@type": "Organization",
-              "name": "Vellio Nation"
-            },
+            ...(Array.isArray(solution.reviews) && solution.reviews.length > 0 ? {
+              "review": solution.reviews.map(r => ({
+                "@type": "Review",
+                "reviewRating": { "@type": "Rating", "ratingValue": String(r.rating || 5) },
+                "author": { "@type": "Person", "name": r.author },
+                "reviewBody": r.body,
+                "datePublished": r.date
+              }))
+            } : {}),
             "url": `https://www.vellionation.com/solutions/${solution.slug}`
           })}
         </script>
